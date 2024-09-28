@@ -29,15 +29,10 @@ keymap.set("n", "<leader>sx", "<cmd>close<cr>", { desc = "close current split" }
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<cr>", { desc = "open new tab" })
 keymap.set("n", "<leader>tx", "<cmd>tabclose<cr>", { desc = "close current tab" })
-keymap.set("n", "<m-c-tab>", "<cmd>tabn<cr>", { desc = "go to next tab" })
-keymap.set("n", "<m-c-s-tab>", "<cmd>tabp<cr>", { desc = "go to previous tab" })
+keymap.set("n", "<S-D-Right>", "<cmd>tabn<cr>", { desc = "go to next tab" })
+keymap.set("n", "<S-D-Left>", "<cmd>tabp<cr>", { desc = "go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<cr>", { desc = "open current buffer in new tab" })
 
-
-keymap.set("n", "<m-c-down>", "<c-w>j", { desc = "go to pane below" })
-keymap.set("n", "<m-c-up>", "<c-w>k", { desc = "go to pane above" })
-keymap.set("n", "<m-c-left>", "<c-w>h", { desc = "go to pane left" })
-keymap.set("n", "<m-c-right>", "<c-w>l", { desc = "go to pane right" })
 
 
 keymap.set("x", ">", ">gv")
@@ -47,6 +42,7 @@ keymap.set("x", "<", "<gv")
 
 keymap.set("n", "<m-c-pageup>", "<c-u>zz")
 keymap.set("n", "<m-c-pagedown>", "<c-d>zz")
+
 
 
 keymap.set("n", "<M-Up>", ":m .-2<cr>==", { desc = "move line up" })
@@ -71,3 +67,4 @@ keymap.set("n", "<leader>/", "<plug>(comment_toggle_linewise_current)")
 keymap.set("x", "<leader>/", "<plug>(comment_toggle_linewise_visual)")
 
 keymap.set("n", "<leader>q", ":cclose<cr>", {desc = "close quickfix list"})
+
